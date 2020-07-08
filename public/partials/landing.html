@@ -1,0 +1,69 @@
+<!--
+
+@author   Néstor Quezada Castillo <neqc2015@gmail.com>
+
+Contenido parcial para la pantalla de las listas de partidas(Pantalla principal)
+
+-->
+<div id='gameCont' style='position:absolute'></div>
+
+<div flex  ng-cloak="" class="main-cont" id='mainCont'  >
+    <div layout="column" layout-align="center">
+        <h1 id='game-title' style="">BATTLESHIP</h1>
+        <div>version 1.0</div>
+    </div>
+   
+
+        
+    <div layout="column" ng-cloak="" layout-align="center center" >
+        
+
+            <div>
+               <md-content md-theme="docs-dark" layout-gt-sm="row" layout-padding id='form'>
+                <form> 
+                    
+                    <md-input-container style='margin-top:25px; margin-bottom: 0px'>
+                        <label>Nickname</label>
+                        <input ng-model="user.nickname" placeholder="Commander">
+                    </md-input-container>
+
+                    <div ng-repeat="item in availableGames">
+                        <md-button  ng-attr-id="{{ $index }}" ng-click="play($index)" type="submit">
+                        <div class="md-list-item-text">
+                            <h3 id='button-play'>{{ item.n }}</h3>
+                        </div>
+                        </md-button>
+                    </div>
+
+                </form> 
+              </md-content>
+            </div>
+      
+    </div>          
+        
+    <div layout="row" layout-align="center center">
+        
+
+    </div>
+    
+    <!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>-->
+</div>
+
+
+<script>
+    $('#viewport').attr('content', 'user-scalable=no, initial-scale=1, width=device-width');
+</script>
+<!--<script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.6";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+</script>-->        
+
+
+
+   
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+@author   Néstor Quezada Castillo <neqc2015@gmail.com>
+
+Template base para la aplicación
+-->
+<html lang="en">
+  <head>
+    <meta content='user-scalable=no, initial-scale=1, width=device-width' id='viewport' name='viewport'>
+      <meta name="BattleShip" content="BattleShip">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0099e6">
+       
+    <title>BattleShip</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../vendors/angular-material/angular-material.min.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    
+    <style>
+        [ng\:cloak], [ng-cloak], .ng-cloak {
+            display: none !important;
+        }
+
+        
+        
+    </style>
+    
+        
+        
+        <!-- bower:js -->
+        <script src="../vendors/jquery/dist/jquery.min.js"></script>
+        <script src="../vendors/angular/angular.min.js"></script>
+        <script src="../vendors/angular-animate/angular-animate.min.js"></script>
+        <script src="../vendors/angular-aria/angular-aria.min.js"></script>
+        <script src="../vendors/angular-material/angular-material.min.js"></script>
+        <script src="../vendors/angular-route/angular-route.min.js"></script>
+        <script src="../vendors/phaser/build/phaser.min.js"></script>
+        <!-- endbower -->
+     
+        <script src="/js/BattleShip.min.js"></script>
+
+    </head>
+    <body ng-app="BattleShip" ng-cloak  class="listdemoBasicUsage" id='mBody' >
+
+        <div ng-view id='mainView' style=''></div>
+        <div id="incorrectOrientation">
+            <h2>Please rotate the device</h2>
+            <img src="../assets/icons/rotate.svg" alt='rotate phone' width="200" height='200'>
+        </div>
+        <div id="touchtostart">
+            <h2>Touch to change to full screen !</h2>
+        </div>
+              
+        <div layout="row" ng-controller="MessagesCtrl" id='messages' layout-align="center center">
+            <form ng-submit="" name="messageForm"> 
+                <md-input-container>
+                  <label id="labelm">Message</label>
+                  <input ng-model="message" id="mymessage" placeholder="Write something nice">
+                </md-input-container>
+                <md-button type="submit" required  id="buttonCloseMessagesInput">Close</md-button>
+            </form> 
+        </div>
+                
+        <div id="fb-root"></div>
+        
+    </body>
+</html>

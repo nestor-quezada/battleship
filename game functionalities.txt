@@ -1,0 +1,6 @@
+- Puede haber partidas por equipos, y con esto se puede variar la forma del sprite que usamos.
+- Puede haber partidas privadas ??? 
+- El sprite dispara balas con la misma forma de la nave.
+- Cuando un jugador vence a otro aumenta su vida(barra de vida) y también puede ganar armamento más potente o movimientos nuevos(camuflaje).
+- El jugador que muere retorna a la página principal(si esta registrado se le da un feedback de sus estadísticas en combate).
+- El jugador podrá evolucionar, empezará con una forma(cuadrado) con pocas propiedades y armas poco potentes. Conforme vaya derrotando enemigos el jugador irá cambiando de forma y haciendose más potente. 

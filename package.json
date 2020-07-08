@@ -1,0 +1,54 @@
+{
+  "name": "BattleShip",
+  "version": "1.0.0",
+  "description": "Real time game",
+  "keywords": [
+    "BattleShip",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "Néstor Quezada Castillo",
+    "email": "neqc2015@gmail.com",
+    "url": ""
+  },
+  "homepage": "http://www.openshift.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-server"
+  },
+  "engines": {
+    "node": ">= 5.11.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-aria": "^1.5.0",
+    "angular-material": "^1.0.5",
+    "angular-messages": "^1.5.2",
+    "bower": "^1.7.7",
+    "bower-installer": "^1.2.0",
+    "express": "^4.10.2",
+    "grunt-cli": "^0.1.13",
+    "grunt-init": "^0.3.2",
+    "node-uuid": "^1.4.7",
+    "socket.io": "^1.4.5",
+    "ws": "^1.1.0"
+  },
+  "devDependencies": {
+    "graceful-fs": "^4.1.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-wiredep": "^2.0.0"
+  },
+  "bundleDependencies": [],
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "supervisor server.js"
+  },
+  "main": "server.js"
+}
